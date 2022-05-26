@@ -1,0 +1,1 @@
+# Starter Project for TypeScript (ES7)
