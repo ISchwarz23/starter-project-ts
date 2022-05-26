@@ -1,0 +1,40 @@
+{
+  "name": "starter-project-ts",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test"
+    }
+  },
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build --silent --scripts-prepend-node-path && node build/index.js",
+    "lint": "eslint . --ext .ts",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@types/node": "^12.7.2",
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
+    "@typescript-eslint/parser": "^2.21.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.3",
+    "jest": "^26.5.3",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^26.4.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^4.0.3"
+  }
+}
