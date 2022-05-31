@@ -10,7 +10,7 @@ export class InputReader {
     }
 
     public readLineAsString(): string {
-        return this.reader.next();
+        return this.reader.next().toString('utf8');
     }
 
     public readLineAsStringArray(splitter: string = ' '): string[] {
