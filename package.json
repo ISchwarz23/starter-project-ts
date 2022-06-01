@@ -20,7 +20,8 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
-    "n-readlines": "^1.0.1"
+    "@types/n-readlines": "^1.0.3",
+    "n-readlines": "^1.0.3"
   },
   "devDependencies": {
     "@types/jest": "^26.0.14",
